@@ -1,0 +1,28 @@
+
+
+.buscador_propiedades {
+    color: white
+}
+.buscador_entrada {
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    }
+
+    .carousel__conteiner {
+       white-space: nowrap; 
+       margin: 70px 0px;
+       padding-bottom: 10px;
+    }
+    .carousel__item {
+        background-color: blueviolet;
+      width: 200px;
+      height: 250px;
+      border-radius: 20px;
+    }

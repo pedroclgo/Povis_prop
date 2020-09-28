@@ -1,0 +1,453 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0; /*se le saca el margen*/
+    background-color: teal;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    flex: 1;
+    height: 90px;   /*Especificamos el alto */
+    background-color: #154360;
+    display: flex; /*Para q los elementos hijos se alineen en forma horizontal se pongan uno a la lado dle otro*/
+    justify-content: space-between;/*Para mandar a cada elemento hijo a un exptremo contrario el figure a la izquierda y el nav a la derecha */
+    margin: 0 auto;
+    text-decoration: none; 
+    /*max-width: 1000px;*/
+    flex: 1;
+}
+
+
+.cabecera {
+    font-weight: normal; /* tipo de fuente*/
+    font-style: italic; /* se puede elejir si la fuente es cursiva*/
+    font-size: 40px; /* tamaño de fuente*/
+    letter-spacing: -2px; /*separación entre las letras*/
+    line-height: 1.5; /*alto de linea*/
+    text-transform: uppercase; /* para q las letras seanmayusculas*/
+    text-decoration: none;  /* para aplicar subrrallado*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+    color: white;
+    height: inherit;    
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: inherit;
+    flex-shrink: 0; /*para q sea encogible o no 1 o 0 , esta propiedad es para hijos de los que tienen la propiedad display:flex; */
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.link {
+    border: 1px solid yellowgreen;
+    border-radius: 15px;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-left: 0;
+    color: white;
+    text-decoration: none;
+
+}
+.header li {   /* para asignarle a todos los códigos Header en a */
+    /* para darle color a las letras de este fragmento*/
+    height: inherit;
+    display: flex; /*Nos permite mostrar los elementos de lizta de forma horizontal en lugar de vertical */
+    align-items: center;
+    padding: 5px 10px; /*Para añadir espacio entre los diferentes elementos del menú, superior e inferior de 0 y izquierdo y derecho de 10px*/
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding-right: 2px;
+
+        
+    }
+
+
+ol,  /* Es la forma de configurar dos elementos con los mismos atributos*/
+ul {
+    display: flex;
+    height: inherit; *//*hereda la altura del padre , en este caso del header*/
+   list-style: none; /* Atributo para sacarle las biñetas y nros*/
+}
+
+.menu2 {
+    width: 100%;
+    height: 90px;   /*Especificamos el alto */
+    background-color: teal;
+    display: flex; /*Para q los elementos hijos se alineen en forma horizontal se pongan uno a la lado dle otro*/
+    justify-content: space-between; /*Para mandar a cada elemento hijo a un exptremo contrario el figure a la izquierda y el nav a la derecha */
+    height: inherit;
+    margin-bottom: -9px;
+    margin-block-start: -9px;
+    flex-wrap: wrap;
+}
+
+.subtitulo1 {
+        padding-bottom: 6px; /* para que el elemento no se pegue al margen*/
+        height: auto;
+        font-style: italic;
+        color: #d5d5df;
+        text-transform: uppercase; /*para que se ponga en mayusculas*/
+        font-family: sans-serif; /*cambio de tipo de fuente*/s
+        font-weight: bold; /*para darle negrita*/
+        font-size:20px; /*tamaño de fuente*/
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+}
+
+.sub_menu {
+    height: 50px; /*altura del sector  */
+    /* background-image: url("../images/hero.jpg") =se utiliza para poner imagen de fondo   */
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    padding: 9px 6px;
+    flex-wrap: wrap;
+}
+.sub_menu li {
+    display: flex;
+    height: inherit; /*hereda la altura del padre , en este caso del header*/
+    list-style: none;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+.sub_menu a {
+    color: white; 
+    text-decoration: none; 
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px; /*añado espacio entre los elemtens del menu */ 
+}
+
+.link1 {
+    border: 1px solid yellowgreen;
+    border-radius: 6px;
+    /*padding: 0px 10px;*/
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.buscador_entrada {
+   background-color: rgba(255,255,255,0.1);
+   border: 2px solid white;
+   border-radius: 25px;
+   color: white;
+   font-family: sans-serif;
+   font-size: 16px;
+   height: 50px;
+   padding: 0px 20px;
+   width: 30%;
+}
+
+::placeholder {
+    color: purple;
+}
+
+video {
+width: 100%;
+z-index: -1;
+margin-top: 25px;
+flex-wrap: wrap;
+}
+
+.video{
+    flex-shrink: 0; /*Se coloca esta opción para que no se achique nada el vídeo y se adapte a la medida de la pantalla*/
+}
+
+.description-p { /*sección al cual le doy estilo */
+color: white;
+padding: 10px 25px;
+}
+
+p strong { /* se le aplica la designación descendente para apuntar a lo que quiero ponerle estilos */
+    color: black; /*se le aplica el color a las letras */
+   }
+
+.realstate {
+    width: 100%;
+    height: 425px;
+    background-repeat: no-repeat; 
+    /*margin: 0px 500px 0px 0px;*/      /*the margin works  top right bottom left */
+    border: 1px solid yellow;
+    /*background: teal;*/ /*para darle color al fondo*/
+    /*display: flex;*/ /* Propiedad que sirve para que un elemento se ponga al lado del otro sin nesecidad de configurar cada hijo directo (pero no a los hijos de los hijos) , si no directamente del padre*/
+    /*flex-direction: column;*/ /*Cuando tenemos muchos elementos en la misma sección y se nos rompe el modelo de caja , para q siga funcionando se coloca  esta propiedad que puede ser en columna o en fila (row) */
+    /*flex-wrap: wrap;*/ /*se coloca para que los elementos asignadossi no se ven en la pestaña , caigan para que se lleguen a ver. (nowrap , es para q nunca caiga a la parte inferior)*/
+    /*justify-content: center ;*/   /* justify-content es una propiedad que tiene variaicones para que los elementos se distribuyan de forma horizontal.(flex-start: ubica en el inicio del elemento flexbox , flex-end (lo ubica al final), y el center que es para utilizar el centrado.*/
+    /*justify-content: space-evenly; /* da un mismo espaciado en todos los elementos*/
+    /*justify-content: space-around;*/ /*genera espaciado igual aa la izquierda y derecha de los elementos hijos*/
+    /*align-items: center;+/  /*para Alinear el espacio vertical en la de inicio, flex-end (para la base), center es para (centrar el contenido) tambien hay q generarlo ( lo hacemos tomando  height  y poniendole altura)*/
+    background-image: url("./imagenes/prueba.jpg"); /*para colocar imagen desde css*/
+    background-size: 500px 400px ; /*recibe dos valores de ancho y alto  (width heigh)*/
+    background-position-x: right;  /*para darle la posición sobre el eje x, puedo poner de valor 100 px o con el keywords value right (significa q va estar desde la derecha) */
+    background-position-y: 15px;
+    border-radius: 10px;
+    text-align: center; /*para que el texto se centre*/
+    flex-wrap: wrap;
+}
+
+.realstate-details { 
+    max-width: 50%;
+}
+
+.realstate-details h1 {
+    /*flex-shrink: 0;*/ /*se le coloca esta opción para que el elemento designado no se achique nada en este caso , si se pone 1 se achica el 100 */
+width: 50%;
+flex-wrap: wrap;
+font-size: 40px; /* tamaño de fuente*/
+font-style: italic;
+flex-wrap: wrap;
+
+}
+ .description-p h1{
+     color: yellow;
+    font-weight: normal; /* tipo de fuente*/
+    font-style: italic; /* se puede elejir si la fuente es cursiva*/
+    font-size: 40px;
+    text-decoration: none;
+    flex-wrap: wrap; 
+} 
+
+.title-realstate {
+    flex-shrink: 1;
+    color: white;
+    text-decoration: none;
+    font-weight: normal; /* tipo de fuente*/
+    font-style: italic; /* se puede elejir si la fuente es cursiva*/
+    flex-wrap: wrap;
+
+}
+.title-realstate {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.description-p  {
+    flex-shrink: 1;
+    margin-block-start: 5px;
+}
+
+.suscripcionv {
+    padding: 20px;
+    color: white;
+    height: 150px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    /*border-top: 10px solid orange;*/  /* border superior se le puede configurar tamaño tipo y estilo*/
+    /*border-right: 10px solid greenyellow;*/ /*borde verde fluorescente*/
+    /*border-left: 10px solid red;*/ /*borde parte izquierda*/
+    /*border-bottom: 10px solid white;*/ /*borde parte inferior*/ 
+    /*border-color: violet;*/ /*para darle la misma configuración a todos los bordes */
+    /*border-width: 5px;*/ /*configuración de grosor de línea*/
+    /*border-style: solid;*/  /*configuración estilo de borde*/
+    /*border: 1px solid black;*/ /*La configuración para todos los bordes */
+    /*border-radius: 10px; *//*Se redondea todos los bordes*/
+    /*border-top-left-radius: 25px;*/ /*se redondea solo la parte de arriba izquierda*/
+}
+
+.suscripcionv {
+    display: flex;
+}
+.suscripcionv input{
+border-color: greenyellow;
+padding: 5px 20px 5px 25px;
+background-image: url("./imagenes/Envelope12.svg.png");
+background-size: 15px 15px; /*para que la imagen se imprima, ay q colocar el tamaño antes*/
+background-repeat: no-repeat; /*para que no se repita la imagen*/
+background-position-y: center;
+border-radius: 5px;
+margin-bottom: 10px;
+
+flex-wrap: wrap;
+}
+
+div .social {
+    width: 100%;
+    float: left;
+    display: flex;
+
+    /*list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;*/
+}
+.social-link {
+    display: inline-block; /* se coloca este para que se vean los espacios designados para redes sociales*/
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;  /*le doy un tamaño a la imagen*/
+    flex-wrap: wrap;
+}
+.social-link.whatsapp { /*se coloca punto en cada separación cuando hace referencia a dos estilos al mismo tiempo */ 
+    background-image: url("./imagenes/whatsapp.jpeg");
+    flex-wrap: wrap;
+}
+
+.social-link.facebook { /*se coloca punto en cada separación cuando hace referencia a dos estilos al mismo tiempo */ 
+    background-image: url("./imagenes/Facebook.jpeg");
+    flex-wrap: wrap;
+}
+.social-link.instagram { /*se coloca punto en cada separación cuando hace referencia a dos estilos al mismo tiempo */ 
+    background-image: url("./imagenes/instagram.jpeg");
+    flex-wrap: wrap;
+}
+.social-link.youtube { /*se coloca punto en cada separación cuando hace referencia a dos estilos al mismo tiempo */ 
+    background-image: url("./imagenes/youtube.jpeg");
+    flex-wrap: wrap;
+}
+
+.footer {
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.footer a {
+    color: yellow;
+
+}
+
+header .menu1 a:hover {
+    border: 1px solid; #c6c6c6;
+    box-shadow; 0 1px 1px #000001; 
+    color: blue;
+    flex-wrap: wrap;
+}
+
+section .suscripcionv button:hover {
+    border: 1px solid; #c6c6c6;
+    box-shadow; 0 1px 1px #000001; 
+    color: blue;
+}
+
+@media screen and (max-width: 1024px){
+    
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        display:block;
+        height: auto;
+        width: 100%; 
+  }
+
+    .header ol {  
+        justify-content: center;
+       /* margin-top: -21px;*/
+        display: block;        
+    }
+
+    .header ol li {
+       height: auto;
+       width: auto;
+       margin-top: 0px;
+       margin-bottom: 0px;
+       text-align: center;
+    }
+
+    .header .cabecera {
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    .cabecera {
+        text-align: center;
+    }
+
+    .header a {
+        text-align: center;
+
+    }
+
+    .subtitulo1 {
+        height: auto;
+        text-align: center;
+        font-size: 1,5em;
+    }
+
+    .sub_menu {
+        display:block;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .sub_menu li a {
+        margin-bottom: 3px;
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    .realstate {
+        display:block;
+        width: auto;
+        text-align: center;
+    }
+
+    .realstate-details  {
+        height: auto;
+        width : auto;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    video {
+        width: 100%;
+        flex-shrink: 0;
+        margin-top: 0px;
+  }
+
+  .suscripcionv input {
+      margin-right: 21px;
+  }
+  
+  .suscripcionv {
+      text-align: center;
+      height: auto; 
+      padding-bottom: 15px;
+      padding-top: 0px;
+  }
+
+  div .social {
+      text-align: center;
+      padding-bottom: 12px;
+  }
+
+  .suscripcionv h3 {
+      text-align: center;
+  }
+
+.footer section p {
+    text-align: center;
+    display: block;
+}
+.footer {
+    display: block;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 480px){
+}
+
+@media screen and (max-width: 320px){
+    
+}
+
